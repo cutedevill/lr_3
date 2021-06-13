@@ -1,10 +1,9 @@
 language: python
-pythhon: 
- - "3.7.6"
-before_install:
- - chmod +x ./flaskapp/st.sh
+
 install:
- - pip install ." requiroments.txt
+
+- pip3 install flask
+
 script:
- - cd flaskapp
- - ./st.sh
+
+- python3 ./flaskapp/some_app.py
